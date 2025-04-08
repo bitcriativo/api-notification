@@ -1,9 +1,9 @@
 import { Request, Response } from 'express';
-import { Contact, contactSchema } from '@/src/contact-schema';
-import { sendMail } from '@/src/sendmail';
+import { Contact, contactSchema } from '@/contact-schema';
+import { sendMail } from '@/sendmail';
 import { ZodError } from 'zod';
-import { formatZodError } from '@/src/format-zod-error';
-import { EmailRejectError } from '@/src/email-reject-error';
+import { formatZodError } from '@/format-zod-error';
+import { EmailRejectError } from '@/email-reject-error';
 
 export async function contactSend(req: Request, res: Response) {
   try {

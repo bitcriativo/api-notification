@@ -1,6 +1,6 @@
 import dotenv from 'dotenv';
 import { createTransport } from 'nodemailer';
-import { EmailRejectError } from '@/src/email-reject-error';
+import { EmailRejectError } from '@/email-reject-error';
 
 dotenv.config();
 

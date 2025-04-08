@@ -1,5 +1,6 @@
+import 'tsconfig-paths/register';
 import express from 'express';
-import router from '@/src/router';
+import router from '@/router';
 import dotenv from 'dotenv';
 
 dotenv.config({
